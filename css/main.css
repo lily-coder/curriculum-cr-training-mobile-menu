@@ -419,13 +419,12 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
-/* Mobile Menu */
 .hambuger {
   cursor: pointer;
 }
 
 .menu-bar {
-  background-color: #1aa544;
+  background-color: #1c1a19;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -602,7 +601,7 @@ textarea {
     width: 3vw;
     height: 32px;
   }
- /* Removes the visibility of the hambuger menu in desktop*/
+
   .hambuger,
   .menu-bar {
     visibility: hidden;
