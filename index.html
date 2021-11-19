@@ -12,7 +12,7 @@
     <header>
       <h1 id="logo">Aziz Mejri</h1>
       <button type="button" class="menu-bars">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars hambuger" id="hamburger"></i>
       </button>
       <nav id="desktop-nav">
         <ul>
@@ -26,6 +26,15 @@
         </ul>
       </nav>
     </header>
+    <aside class="menu-bar">
+      <ul>
+        <li class="mobile-list"><a href="#about-me">About</a></li>
+        <li class="mobile-list"><a href="#projects">Portfolio</a></li>
+        <li class="mobile-list"><a href="#skillset">Skills</a></li>
+        <li class="mobile-list"><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fa fa-close fa-2x hamburger" id="close"></i>
+    </aside>
     <main>
       <div id="intro">
         <div class="intro-icon">
@@ -281,7 +290,7 @@
           />
         </section>
         <hr />
-        <div class="stacks">
+        <div class="stacks" id="skillset">
           <ul>
             <li class="languages list-title">
               Languages
@@ -442,5 +451,6 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>

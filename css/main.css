@@ -416,6 +416,63 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
+/* Mobile Menu */
+.hambuger {
+  cursor: pointer;
+}
+
+.menu-bar {
+  background-color: #1c1a19;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: -110%;
+  z-index: 1000;
+}
+
+.menu-bar ul {
+  margin-bottom: 24px;
+  list-style: none;
+  margin-top: 100px;
+}
+
+.menu-bar ul li {
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-bar ul li a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ebebff;
+  text-decoration: none;
+}
+
+.menu-bar ul li a::after {
+  content: url(./assets/side-arrow.png);
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  z-index: 999;
+  cursor: pointer;
+  color: #fff;
+}
+
+
 @media all and (min-width: 720px) {
   .top-social {
     flex-direction: column;
@@ -558,5 +615,10 @@ textarea {
   .social-icon {
     width: 3vw;
     height: 32px;
+  }
+
+  .hambuger,
+  .menu-bar {
+    visibility: hidden;
   }
 }
