@@ -27,7 +27,14 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+.menu-bar ul {
+  margin-bottom: 24px;
+  list-style: none;
+  margin-top: 100px;
+}
+
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
@@ -278,6 +285,12 @@ li {
   cursor: pointer;
 }
 
+.menu-bar ul li {
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+
 .project-stacks li:hover {
   background: rgba(0, 0, 0, 0.349);
 }
@@ -431,22 +444,6 @@ textarea {
   z-index: 1000;
 }
 
-.menu-bar ul {
-  margin-bottom: 24px;
-  list-style: none;
-  margin-top: 100px;
-}
-
-.menu-bar ul li {
-  position: relative;
-  padding-bottom: 20px;
-  z-index: 999;
-}
-
-a {
-  text-decoration: none;
-}
-
 .menu-bar ul li a {
   font-size: 24px;
   font-style: normal;
@@ -471,7 +468,6 @@ a {
   cursor: pointer;
   color: #fff;
 }
-
 
 @media all and (min-width: 720px) {
   .top-social {
